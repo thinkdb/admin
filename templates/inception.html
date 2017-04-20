@@ -1,0 +1,16 @@
+<!--继承基础模板-->
+{% extends 'base.html' %}
+
+<!--修改基础模板中的 title 标签-->
+{% block title %}SQL发布{% endblock %}
+
+    <!--修改主体标题-->
+    {% block body_title %}
+        Inception
+    {% endblock %}
+
+    <!--修改主体内容-->
+    {% block body_body %}
+        <!--导入sql提交表单-->
+        {% include 'ince_forms.html' %}
+    {% endblock %}
